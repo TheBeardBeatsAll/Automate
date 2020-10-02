@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": ".automate\\Scripts\\python.exe",
+    "cSpell.ignoreWords": [
+        "chess",
+        "chess dictionary",
+        "dictionary"
+    ]
+}
