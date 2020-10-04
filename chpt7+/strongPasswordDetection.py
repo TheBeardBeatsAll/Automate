@@ -1,5 +1,6 @@
 import re
 
+# Check password strength using multiple regexes
 def passwordStrength(password):
 
     eightCharsLongRegex = re.compile(r'[\w\d\s\W\D\S]{8,}')

@@ -1,5 +1,6 @@
 import re
 
+# Strip white spaces from left & right hand side of text
 def strip(text):
     stripStartRegex = re.compile(r'(^\s*)')
     stripEndRegex = re.compile(r'(\s*$)')

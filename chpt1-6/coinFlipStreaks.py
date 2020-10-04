@@ -8,6 +8,7 @@ for experimentNumber in range(10000):
             randomList.append('H')
         else:
             randomList.append('T')
+
     # Code that checks if there is a streak of 6 heads or tails in a row.
     counterH, counterT = 0, 0
     for flip in range(100):
@@ -20,4 +21,5 @@ for experimentNumber in range(10000):
         if counterH == 6 or counterT == 6:
             numberOfStreaks +=1
             counterH, counterT = 0, 0
+            
 print('Chance of streak: %s%%' % (numberOfStreaks/100))

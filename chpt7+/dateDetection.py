@@ -1,11 +1,13 @@
 import re
 
+# Find dates within text
 def dateFind(inputDate):
     dateRegex = re.compile(r'((\d{2})/(\d{2})/(\d{4}))')
     print(dateRegex.search(inputDate))
     for groups in dateRegex.findall(inputDate):
         dateValidate(groups[0], int(groups[1]), int(groups[2]), int(groups[3]))
 
+# Check date is valid
 def dateValidate(fullDate, day, month, year):
     month30=[4, 6, 9, 11]
     month31=[1, 3, 5, 7, 8, 10, 12]

@@ -18,11 +18,12 @@ class randomZombie:
         #  'rolls': [('yellow', 'brains'), ('red', 'footsteps'),
         #            ('green', 'shotgun')]}
 
-        # REPLACE THIS ZOMBIE CODE WITH YOUR OWN:
+        # 50/50 chance it will roll again:
         results = zombiedice.roll() # first roll
         while results and random.randint(0, 1) == 0:
             results = zombiedice.roll()
 
+# Zombie stops at 2 brains each turn
 class stopAt2Brains:
     def __init__(self, name):
         self.name = name
@@ -38,6 +39,7 @@ class stopAt2Brains:
             else:
                 break
 
+# Zombie stops at 2 shotguns each turn
 class stopAt2Shotguns:
     def __init__(self, name):
         self.name = name
@@ -53,6 +55,7 @@ class stopAt2Shotguns:
             else:
                 break
 
+# Zombie randomly decides between 1 & 4 rolls & stops at 2 brains each turn 
 class oneToFourStopAt2Shotgun:
     def __init__(self, name):
         self.name = name
@@ -72,6 +75,7 @@ class oneToFourStopAt2Shotgun:
             else:
                 break
 
+# Zombie stops when more shotguns than brains
 class moreShotgunsThanBrains:
     def __init__(self, name):
         self.name = name

@@ -22,9 +22,10 @@ if pyip.inputYesNo(prompt='Do you want lettuce?')[0].lower() == 'y':
 if pyip.inputYesNo(prompt='Do you want tomato?')[0].lower() == 'y':
     selection.append('tomato')
 
+# Get price of sandwich based on selection
 quantity = pyip.inputInt('How many of this sandwich do you want? ', min=1)
 total = 0
 for ingredient in selection:
     total += prices[ingredient]
-total *= quantity
+total *= quantity # Get updated price based on quantity of sandwichs
 print('Your total is: ' + str(total))
