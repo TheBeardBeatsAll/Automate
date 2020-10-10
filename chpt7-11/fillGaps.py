@@ -32,7 +32,7 @@ def fillGaps(folderPath, prefix):
 
         if fileNum != count:
             newFileName = prefix + '0'*(max_length-len(str(fileNum))) + str(count) + mo.group(2)
-            shutil.move(os.path.abspath(file), os.path.abspath(newFileName))
+            shutil.move(os.path.abspath(folderPath + file), os.path.abspath(folderPath + newFileName))
 
         count += 1
 
@@ -80,4 +80,4 @@ with open(base + 'spam001.txt', 'w') as s1, open(base + 'spam003.txt', 'w') as s
     s3.write('spam003')
 
 fillGaps(base, 'spam')
-# insertGaps(base, 'spam', 2)
+insertGaps(base, 'spam', 2)
