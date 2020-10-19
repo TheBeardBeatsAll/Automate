@@ -20,8 +20,8 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix', '
 # Generate 35 quiz files.
 for quizNum in range(35):
    # Create the quiz and answer key files.
-   quizFile = open(f'chpt7-11/randomQuizes/capitalsquiz{quizNum + 1}.txt', 'w')
-   answerKeyFile = open(f'chpt7-11/randomAnswers/capitalsquiz_answers{quizNum + 1}.txt', 'w')
+   quizFile = open(f'chpt9/randomQuizes/capitalsquiz{quizNum + 1}.txt', 'w')
+   answerKeyFile = open(f'chpt9/randomAnswers/capitalsquiz_answers{quizNum + 1}.txt', 'w')
    # Write out the header for the quiz.
    quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
    quizFile.write((' ' * 20) + f'State Capitals Quiz (Form{quizNum + 1})')

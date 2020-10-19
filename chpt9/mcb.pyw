@@ -6,7 +6,7 @@
 
 import shelve, pyperclip, sys
 
-mcbShelf = shelve.open('chpt7-11/mcbData/mcb')
+mcbShelf = shelve.open('chpt9/mcbData/mcb')
 
 #Save clipboard content.
 if len(sys.argv) == 3:
@@ -27,6 +27,5 @@ elif len(sys.argv) == 2:
         pyperclip.copy('')
     elif sys.argv[1] in mcbShelf:
         pyperclip.copy(mcbShelf[sys.argv[1]])
-# TODO: List keywords and load content.
 
 mcbShelf.close()

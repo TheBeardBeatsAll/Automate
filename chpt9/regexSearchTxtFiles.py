@@ -29,4 +29,4 @@ def regexSearch(regexStr, folderPath):
                 print('')
 
 regex = input('enter regex: ')
-regexSearch(regex, 'chpt7-11/regexSearchTxtFilesData/')
+regexSearch(regex, 'chpt9/regexSearchTxtFilesData/')

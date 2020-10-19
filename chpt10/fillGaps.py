@@ -75,7 +75,7 @@ def insertGaps(folderPath, prefix, index):
                 newFileName = prefix + '0'*(max_length-len(str(newFileNum))) + str(newFileNum) + mo.group(2)
                 shutil.move(os.path.abspath(folderPath + file), os.path.abspath(folderPath + newFileName))
 
-base = './chpt7-11/fillGapsData/'
+base = './chpt10/fillGapsData/'
 
 with open(base + 'spam001.txt', 'w') as s1, open(base + 'spam003.txt', 'w') as s3:
     s1.write('spam001')
