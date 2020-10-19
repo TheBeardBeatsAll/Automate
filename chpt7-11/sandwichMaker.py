@@ -1,3 +1,4 @@
+#! python3
 import pyinputplus as pyip
 
 prices = {'white': 1, 'wheat': 1.25, 'sourdough': 1.5,

@@ -1,3 +1,5 @@
+#! python3
+
 import os
 
 def findUnneeded(folderPath, rejectSize):

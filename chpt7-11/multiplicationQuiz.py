@@ -1,3 +1,5 @@
+#! python3
+
 import pyinputplus as pyip
 import random, time
 

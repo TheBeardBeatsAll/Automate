@@ -1,3 +1,5 @@
+#! python3
+
 import os, re, shutil
 
 def getFilesWithPrefix(folderPath, prefix):

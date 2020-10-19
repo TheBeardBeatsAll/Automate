@@ -1,3 +1,4 @@
+#! python3
 import os, shutil
 
 def selectiveCopy(inputFolder, ext, outputFolder):

@@ -1,3 +1,5 @@
+#! python3
+
 def printTable(table):
 
     # find longest string in each list within table

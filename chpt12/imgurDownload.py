@@ -1,3 +1,5 @@
+#! python3
+
 import os, requests, bs4
 
 def downloader(query, max_save, output_path):

@@ -1,3 +1,5 @@
+#! python3
+
 import re
 
 # Find dates within text

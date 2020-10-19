@@ -1,3 +1,4 @@
+#! python3
 import re
 
 # Strip white spaces from left & right hand side of text

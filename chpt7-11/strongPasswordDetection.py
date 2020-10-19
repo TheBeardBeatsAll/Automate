@@ -1,3 +1,4 @@
+#! python3
 import re
 
 # Check password strength using multiple regexes

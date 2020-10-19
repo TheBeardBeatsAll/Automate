@@ -1,3 +1,5 @@
+#! python3
+
 import random
 numberOfStreaks = 0
 for experimentNumber in range(10000):

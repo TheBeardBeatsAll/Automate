@@ -1,3 +1,5 @@
+#! python3
+
 # Display inventory on separate lines
 def displayInventory(inventory):
     print("Inventory:")

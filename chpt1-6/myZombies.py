@@ -1,3 +1,5 @@
+#! python3
+
 import zombiedice, random
 
 class randomZombie:
