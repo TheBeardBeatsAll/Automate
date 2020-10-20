@@ -1,8 +1,4 @@
 #! python3
-# download_torrent.py
-# Author: Kene Udeh
-# Source: Automate the Boring stuff with python Ch. 16 Project
-
 import subprocess
 import imaplib
 import imapclient
