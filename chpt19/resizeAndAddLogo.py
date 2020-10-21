@@ -16,7 +16,7 @@ logoWidth, logoHeight = logoIm.size
 os.makedirs(WITH_LOGO_DIR, exist_ok=True)
 # Loop over all files in the working directory.
 for filename in os.listdir(CHECK_DIR):
-    if not (filename.endswith('.png') or filename.endswith('.jpg')) or filename == LOGO_FILENAME:
+    if not (filename.lower().endswith('.png') or filename.lower().endswith('.jpg') or filename.lower().endswith('.gif') or filename.lower().endswith('bmp')) or filename == LOGO_FILENAME:
         continue    # skip non-image files and the logo file itself
 
     im = Image.open(CHECK_DIR + filename)
@@ -37,8 +37,12 @@ for filename in os.listdir(CHECK_DIR):
         im = im.resize((width, height))
 
     # Add the logo.
-    print('Adding logo to %s...' % (filename))
-    im.paste(logoIm, (width - logoWidth, height - logoHeight), logoIm)
+    imWidth, imHeight = im.size
+    if imWidth < logoWidth * 2 and imHeight < logoHeight * 2:
+        print("Logo taking up too much space in image so skipped..")
+    else:
+        print('Adding logo to %s...' % (filename))
+        im.paste(logoIm, (width - logoWidth, height - logoHeight), logoIm)
 
     # Save changes.
     im.save(os.path.join(WITH_LOGO_DIR, filename))
